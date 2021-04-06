@@ -1,0 +1,17 @@
+.container:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.slick-prev:before {
+    content: '←';
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

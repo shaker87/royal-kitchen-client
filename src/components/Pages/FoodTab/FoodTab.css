@@ -1,0 +1,20 @@
+.itemMenu{
+    text-align: center;
+}
+.itemMenu ul{
+    list-style: none;
+    margin-left: -5px;
+}
+.itemMenu ul li{
+    margin-left: 5px;
+    display: inline-block;
+    padding: 5px 15px;
+    background:#ca0446;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.itemMenu ul li:hover{
+  background: #ff0157
+}

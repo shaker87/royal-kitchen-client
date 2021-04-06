@@ -1,0 +1,232 @@
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 1rem
+}
+
+.container:not(:last-child) {
+    margin-bottom: 8rem
+}
+#header {
+    width: 100%;
+    z-index: 500;
+    position: fixed;
+    transition: all .5s ease;
+}
+.navbar{
+    padding: 0 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease-in-out
+}
+
+.sticky {
+    background-color: rgba(23, 20, 38, 0);
+    padding: 1.5rem 0
+}
+
+.stickyAdd {
+    background-color: rgba(23, 20, 38, 0.8);
+    box-shadow: 0 0.5rem 1rem 0 rgba(23, 20, 38, 0.3);
+    padding: .2rem 0
+}
+
+.logo {
+   width: 220px;
+   height: 120px;
+}
+@media only screen and (max-width: 62em) {
+    .logo {
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 28px;
+    }
+}
+.primaryColor{
+    color: yellow;
+}
+
+.logo:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbarMenu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+ol, ul {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 62em) {
+    .navbarMenu {
+        width: 0;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10rem 0 0 0;
+        background-color: rgba(23, 20, 38, 0.8);
+        transition: all 0.3s cubic-bezier(0.8, 0.1, 0.1, 0.8)
+    }
+}
+
+.navbarMenu li {
+    color: #fff;
+    padding: .4rem 1rem;
+    margin: .5rem;
+    position: relative;
+    transition: all .5s ease
+}
+
+@media only screen and (max-width: 62em) {
+    .navbarMenu li {
+        padding: .1rem 2rem;
+        text-align: center
+    }
+}
+
+.navbarMenu li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: .2rem 0;
+    display: inline-block;
+    border-bottom: .2rem solid transparent;
+    transition: all .5s ease
+}
+
+
+@media only screen and (max-width: 62em) {
+    ul {
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 62em) {
+    .navbarMenu li a {
+        font-size: 1.5rem
+    }
+}
+
+
+
+.navbarMenu li:hover {
+    color: #fcd842
+}
+
+.navbarMenu li:hover>a {
+    color: #fcd842;
+    border-bottom: 0.2rem solid #fcd842
+}
+
+.navbarMenu .active {
+    color: #fcd842;
+    border-bottom: 0.2rem solid #fcd842
+}
+
+
+
+.navbarCheckbox {
+    position: absolute;
+    left: -9999.9rem
+}
+
+.navbarButton {
+    background-color: #171426;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    z-index: 1500;
+    box-shadow: 0 1rem 3rem rgba(23, 20, 38, 0.15);
+    text-align: center;
+    cursor: pointer;
+    display: none
+}
+
+@media only screen and (max-width: 62em) {
+    .navbarButton {
+        display: block;
+        width: 5.3em;
+        height: 5.3em;
+    }
+    .navbarIcons {
+        position: relative;
+        margin-top: 2.6rem
+    }
+}
+
+.navbarIcons {
+    position: relative;
+    margin-top: 2.6rem
+}
+
+.navbarIcons, .navbarIcons::before, .navbarIcons::after {
+    width: 2.8rem;
+    height: .2rem;
+    background-color: #fff;
+    display: inline-block
+}
+
+.navbarIcons::before, .navbarIcons::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: .2s all ease
+}
+
+.navbarIcons::before {
+    top: -.8rem
+}
+
+.navbarIcons::after {
+    top: .8rem
+}
+
+.navbarButton:hover .navbarIcons::before {
+    top: -1rem
+}
+
+.navbarButton:hover .navbarIcons::after {
+    top: 1rem
+}
+
+@media only screen and (max-width: 62em) {
+    .navbarCheckbox:checked~.navbarMenu {
+        width: 50%;
+        top: 0;
+    }
+    .navbarCheckbox:checked+.navbarButton .navbarIcons {
+        background-color: transparent
+    }
+    .navbarCheckbox:checked+.navbarButton .navbarIcons::before {
+        top: 0;
+        transform: rotate(135deg)
+    }
+    .navbarCheckbox:checked+.navbarButton .navbarIcons::after {
+        top: 0;
+        transform: rotate(-135deg)
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .navbarCheckbox:checked~.navbarMenu {
+        width: 60%
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .navbarCheckbox:checked~.navbarMenu {
+        width: 100%
+    }
+}
