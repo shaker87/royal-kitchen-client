@@ -1,16 +1,35 @@
-.footer{
-    background-color: #1A1A1A;
-    color: #ffff;
+.footer-area{
+    background:#010312;
     width: 100%;
-    height: 60vh;
-    padding: 30px 0px;
-
-}
-
-.footer p{
-    font-size: 16px;
-    font-weight: 500;
+    height: 100%;
+    padding-top: 60px;
     color: #fff;
-    text-align: justify;
-    padding: 20px 0px;
 }
+
+.address-icon h4, .information h4, .quick-links h4, .latest-work h4{
+    font-size: 20px;
+    font-weight: 700;
+} 
+
+
+.information ul, .quick-links ul, .latest-work ul{
+    list-style: none;
+}
+
+.information ul li .quick-links ul li, .latest-work ul li{
+    display: block;
+}
+
+.information ul li a, .quick-links ul li a, .latest-work ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #fff;
+}
+
+.information ul li a:hover, .quick-links ul li a:hover, .latest-work ul li a:hover{
+    color: #117BFB;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}

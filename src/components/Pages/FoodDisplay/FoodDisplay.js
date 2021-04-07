@@ -16,7 +16,7 @@ const FoodDisplay = ({ tab }) => {
         <div className="row">
             {
                 queryFood.length > 0 ? 
-                queryFood.slice(0,6).map((item) => <FoodCard item={item}></FoodCard>)
+                queryFood.slice(0,6).reverse().map((item) => <FoodCard item={item}></FoodCard>)
                 : <h3>Loading........</h3>
             }
         </div>

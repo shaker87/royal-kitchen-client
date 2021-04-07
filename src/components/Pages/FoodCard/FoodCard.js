@@ -1,19 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './FoodCard.css'
 
 const FoodCard = ({ item }) => {
-    const { image, name, price, details } = item;
+    const { image, name, price, details, category } = item;
     return (
-        <div className="col-md-4">
-            <div className=" p-3">
-                <Link to="#" className="link-style">
-                    <div className="card food-card d-flex justify-content-center align-items-center p-3">
-                        <img src={image} alt="" height="120" width="120" /> <br />
-                        <h6>{name}</h6>
-                        <small className="text-muted text-center">{details.slice(0, 50)}...</small>
-                        <h4><strong> BDT {price}</strong></h4>
+        <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="food-card">
+                <div className="food-card_img">
+                    <img src={image} width="100%" alt="" srcset="" />
+                    <Link to="/"><i className="fa fa-heart"></i></Link>
+                </div>
+                <div className="food-card_content">
+                    <div className="food-card_title-section">
+                        <Link to="/" className="food-card_title">{name}</Link>
+                        <Link to="/" className="food-card_author">{category}</Link>
+                        <p>{details.slice(0, 50)}...</p>
                     </div>
-                </Link>
+                    <div className="food-card_bottom-section">
+                        <div className="space-between">
+                            <div>
+                                <span className="fa fa-fire"></span> 220 - 280 Kcal
+                                </div>
+                            <div className="pull-right">
+                                <span className="badge badge-success">Veg</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className="space-between">
+                            <div className="food-card_price">
+                                <span>{price}$</span>
+                            </div>
+                            <div>
+                                <button className="order-btn">Order Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

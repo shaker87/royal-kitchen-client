@@ -6,7 +6,7 @@ import "swiper/swiper-bundle.css";
 
 import SingleSlider from './SingleSlider';
 import bg1 from "../../images/bg6.jpg";
-import bg2 from "../../images/bg2.jpg";
+import bg2 from "../../images/bg3.jpg";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 

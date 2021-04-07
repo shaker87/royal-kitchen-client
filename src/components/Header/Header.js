@@ -21,13 +21,13 @@ const Header = () => {
                     <label htmlFor="navToggle" className="navbarButton"><span className="navbarIcons">&nbsp;</span></label>
 
                     <ul className="navbarMenu">
-                        <li><NavLink exact to="/" className='active' >Home</NavLink></li>
+                        <li><NavLink exact to="/" activClassName='active' >Home</NavLink></li>
 
                         <li><NavLink exact to="/about">About</NavLink></li>
 
-                        <li><NavLink exact to="/menu">Menu</NavLink></li>
-
                         <li><NavLink exact to="/foods">Foods</NavLink></li>
+
+                        <li><NavLink exact to="/menu">Menu</NavLink></li>
 
                         <li><NavLink exact to="/location">Location</NavLink></li>
 
