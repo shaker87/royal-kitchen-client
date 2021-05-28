@@ -11,7 +11,7 @@ const FoodTab = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="title text-center">
-                            <h4>OUR MENU</h4>
+                            <h4>OUR FOODS</h4>
                         </div>
                         <div className="itemMenu">
                             <ul>

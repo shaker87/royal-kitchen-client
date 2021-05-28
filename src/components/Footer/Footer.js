@@ -15,13 +15,13 @@ const Footer = () => {
         <div className="footer-area">
             <div className="container">
                 <div className="row">
-                    <div data-aos="fade-right" className="col-md-3">
+                    <div data-aos="fade-right" className="col-md-3 col-sm-6">
                         <div className="address-icon">
                             <img src={logo} className="w-50 pb-4" alt="" />
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                         </div>
                     </div>
-                    <div data-aos="zoom-in" className="col-md-3">
+                    <div data-aos="zoom-in" className="col-md-3 col-sm-6">
                         <div className="information">
                             <h4>Navigation</h4>
                             <ul>
@@ -33,7 +33,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div data-aos="zoom-in" className="col-md-3">
+                    <div data-aos="zoom-in" className="col-md-3 col-sm-6">
                         <div className="latest-work">
                             <h4>Information</h4>
                             <ul>
@@ -44,7 +44,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div data-aos="fade-left" className="col-md-3">
+                    <div data-aos="fade-left" className="col-md-3 col-sm-6">
                         <div className="quick-links">
                             <h4>Social Links</h4>
                             <ul>

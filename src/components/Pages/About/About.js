@@ -1,10 +1,13 @@
 import React from 'react';
 import './About.css';
 import aboutImg from '../../../images/about_img2.jpg';
+import Header from '../../Header/Header';
 
 const About = () => {
     return (
-        <div className="aboutArea">
+        <div>
+            <Header />
+            <div className="aboutArea">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
@@ -32,6 +35,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

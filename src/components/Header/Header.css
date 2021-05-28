@@ -42,11 +42,8 @@
 }
 @media only screen and (max-width: 62em) {
     .logo {
-        text-transform: uppercase;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 28px;
+        width: 170px;
+        height: 90px;
     }
 }
 .primaryColor{
@@ -157,18 +154,18 @@ ol, ul {
 @media only screen and (max-width: 62em) {
     .navbarButton {
         display: block;
-        width: 5.3em;
-        height: 5.3em;
+        width: 4.7em;
+        height: 4.7em;
     }
     .navbarIcons {
         position: relative;
-        margin-top: 2.6rem
+        margin-top: 1.2rem
     }
 }
 
 .navbarIcons {
     position: relative;
-    margin-top: 2.6rem
+    margin-top: 2.4rem
 }
 
 .navbarIcons, .navbarIcons::before, .navbarIcons::after {
@@ -182,7 +179,8 @@ ol, ul {
     content: "";
     position: absolute;
     left: 0;
-    transition: .2s all ease
+    transition: .2s all ease;
+    
 }
 
 .navbarIcons::before {

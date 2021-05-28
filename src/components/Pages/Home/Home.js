@@ -1,22 +1,28 @@
 import React from 'react';
 import SpecialFoodSlider from '../SpecialFoodSlider/SpecialFoodSlider';
 import FoodTab from '../FoodTab/FoodTab';
-import LatestFoodSlider from '../LatestFoodSlider/LatestFoodSlider';
+// import LatestFoodSlider from '../LatestFoodSlider/LatestFoodSlider';
 import RoyalHomeSlider from '../../RoyalHomeSlider/RoyalHomeSlider';
 import Footer from '../../Footer/Footer';
-import Review from '../../Review/Review';
+import Testimional from '../../Testimional/Testimional';
+import Header from '../../Header/Header';
+import FoodSlider from '../SpecialFoodSlider/FoodSlider';
+ import Contact from '../../Contact/Contact';
 
 
 
 const Home = () => {
     return (
         <>
+            <Header></Header>
             <RoyalHomeSlider></RoyalHomeSlider>
             <main>
+          
                 <SpecialFoodSlider></SpecialFoodSlider>
-                <LatestFoodSlider></LatestFoodSlider>
+                <FoodSlider />
                 <FoodTab></FoodTab>
-                <Review></Review>
+                <Testimional></Testimional>
+                <Contact />
                 <Footer></Footer>
             </main>
         </>

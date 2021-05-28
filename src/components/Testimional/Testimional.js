@@ -1,5 +1,5 @@
 import React from 'react';
-import './Review.css';
+import './Testimional.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import icon1 from '../../images/testi1.jpg';
@@ -41,7 +41,7 @@ const reviewData = [
     },
 ]
 
-const Review = () => {
+const Testimional = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -71,7 +71,7 @@ const Review = () => {
                     <div className="br-bottom"></div>
                 </div>
                 <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000}
-                    keyBoardControl={true} dotListClass="custom-dot-list-style" showDots={true}>
+                    keyBoardControl={true} dotListClass="custom-dot-list-style" showDots={true} transitionDuration= 'all 2s'>
                     {
                         reviewData.map(carousel => {
                             console.log(carousel)
@@ -91,4 +91,4 @@ const Review = () => {
     );
 };
 
-export default Review;
+export default Testimional;

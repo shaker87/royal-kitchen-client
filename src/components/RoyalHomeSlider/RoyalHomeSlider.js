@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import './RoyalHomeSlider.css';
+
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+
 
 import SingleSlider from './SingleSlider';
 import bg1 from "../../images/bg6.jpg";
 import bg2 from "../../images/bg3.jpg";
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]);
 
 
 
@@ -44,8 +46,8 @@ const RoyalHomeSlider = () => {
             <div className='row'>
              
                
-                    <Swiper
-                        spaceBetween={1}
+                    <Swiper 
+                        spaceBetween={0}
                         slidesPerView={1}
                         navigation
                         autoplay={{
@@ -55,6 +57,7 @@ const RoyalHomeSlider = () => {
                         loop={true}
                         onClickHandler={(swiper) => onClickHandler(swiper)}
                         onSlideChange={(swiper) => setSlideIndex(swiper.realIndex)}
+                      
                     >
                         {sliderPart.map((slide, i) => {
                             return (

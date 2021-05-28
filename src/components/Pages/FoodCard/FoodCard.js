@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './FoodCard.css'
 
 const FoodCard = ({ item }) => {
     const { image, name, price, details, category } = item;
+    const [love, setLove] = useState(false);
+    const triggerToggle = () => {
+        setLove( !love )
+    }
+    
     return (
         <div className="col-sm-6 col-md-6 col-lg-4">
             <div className="food-card">
                 <div className="food-card_img">
                     <img src={image} width="100%" alt="" srcset="" />
-                    <Link to="/"><i className="fa fa-heart"></i></Link>
+                    <Link to="/" onClick={() => triggerToggle() }>{love ? <i className="fa fa-heart"></i> : <i className="fa fa-heart-o"></i>}</Link>
                 </div>
                 <div className="food-card_content">
                     <div className="food-card_title-section">
@@ -32,7 +37,7 @@ const FoodCard = ({ item }) => {
                                 <span>{price}$</span>
                             </div>
                             <div>
-                                <button className="order-btn">Order Now</button>
+                                <button className="order-btn">Add to cart</button>
                             </div>
 
                         </div>
