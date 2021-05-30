@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="container">
           <Link to="/" className="logo">
-            <img className="logo" src={logo} alt="" srcset="" />
+            <img className="logo" src={logo} alt="" />
           </Link>
           <input type="checkbox" className="navbarCheckbox" id="navToggle" />
           <label htmlFor="navToggle" className="navbarButton">
@@ -26,7 +26,7 @@ const Header = () => {
           </label>
           <ul className="navbarMenu">
             <li>
-              <NavLink exact to="/" activClassName="active">
+              <NavLink exact to="/" activeClassName="active">
                 Home
               </NavLink>
             </li>

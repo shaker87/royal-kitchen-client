@@ -1,13 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import LeftNavbar from '../LeftNavbar/LeftNavbar';
 //import upload from '../../../images/icons/upload.png'
-import {UserContext} from '../../../App';
+
 //import { ToastContainer, toast } from 'react-toastify';
 const Review = () => {
     // document.title='Creative Agency | Review'
     // const [data]=useContext(UserContext)
-    const [review,setReview]=useState({})
+   
     
     // useEffect(()=>{
     //     setReview({...review,name:data.user?.name})
@@ -45,7 +45,7 @@ const Review = () => {
                         <Row xs={10} sm={12} className='p-5'>
                             <Col xs={10} md={12} lg={8}>
                                 <Form.Group controlId="formBasicName">
-                                    <Form.Control  name='name' type="name" placeholder="Your name" value={review.name} />
+                                    <Form.Control  name='name' type="name" placeholder="Your name" value="name" />
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicDesignation">

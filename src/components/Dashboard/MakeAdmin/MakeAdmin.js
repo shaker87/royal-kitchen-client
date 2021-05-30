@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import LeftNavbar from '../LeftNavbar/LeftNavbar';
 const MakeAdmin = () => {
 
-    const [admin, setAdmin] = useState('')
+  
     // const addAdminHandler = (e) => {
     //     e.preventDefault()
     //     fetch('https://creative-agency-fullstack.herokuapp.com/add-admin', {
@@ -34,7 +34,7 @@ const MakeAdmin = () => {
                                 <Col md={9} lg={7} >
                                     <Form.Label>Email</Form.Label>
                                     <Form.Group controlId="formBasicText">
-                                        <Form.Control onBlur={e => setAdmin(e.target.value)} type="text" placeholder="abc@gmail.com" />
+                                        <Form.Control  type="text" placeholder="abc@gmail.com" />
 
                                     </Form.Group>
                                 </Col>

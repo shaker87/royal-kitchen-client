@@ -1,22 +1,20 @@
 import React from 'react';
-// import { useState } from 'react';
-import { foods } from '../../../FoodData/FoodData';
+import { useSelector } from 'react-redux';
 import FoodCard from '../FoodCard/FoodCard';
 
 const FoodDisplay = ({ tab }) => {
-    const foodItem = foods;
-    // const [food, setFood] = useState([])
 
-    const queryFood= foodItem.filter(foodItem => foodItem.category.toLowerCase() === tab.toLowerCase())
-    // setFood(queryFood)
-    // console.log(queryFood)
-    
-    // console.log(food)
+    const {products} = useSelector(state => state.product);
+    console.log(`products ==>>`, products)
+
+
+    const queryFood= products.filter(foodItem => foodItem.category.toLowerCase() === tab.toLowerCase())
+ 
     return (
         <div className="row">
             {
                 queryFood.length > 0 ? 
-                queryFood.slice(0,6).reverse().map((item) => <FoodCard item={item}></FoodCard>)
+                queryFood.slice(0,6).reverse().map((item,index) => <FoodCard key={index} item={item}></FoodCard>)
                 : <h3>Loading........</h3>
             }
         </div>

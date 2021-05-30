@@ -1,6 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
-import { Form } from 'react-bootstrap';
 //import { ToastContainer, toast } from 'react-toastify';
 
 const AdminServiceListDetails = ({service}) => {

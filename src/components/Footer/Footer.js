@@ -25,11 +25,11 @@ const Footer = () => {
                         <div className="information">
                             <h4>Navigation</h4>
                             <ul>
-                                <li><Link to="/home"><i class="fa fa-caret-right"></i> Home</Link></li>
-                                <li><Link to="/about"><i class="fa fa-caret-right"></i> About</Link></li>
-                                <li><Link to="/menu"><i class="fa fa-caret-right"></i> Menu</Link></li>
-                                <li><Link to="/foods"><i class="fa fa-caret-right"></i> Foods</Link></li>
-                                <li><Link to="/contact"><i class="fa fa-caret-right"></i> Contact</Link></li>
+                                <li><Link to="/home"><i className="fa fa-caret-right"></i> Home</Link></li>
+                                <li><Link to="/about"><i className="fa fa-caret-right"></i> About</Link></li>
+                                <li><Link to="/menu"><i className="fa fa-caret-right"></i> Menu</Link></li>
+                                <li><Link to="/foods"><i className="fa fa-caret-right"></i> Foods</Link></li>
+                                <li><Link to="/contact"><i className="fa fa-caret-right"></i> Contact</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -37,10 +37,10 @@ const Footer = () => {
                         <div className="latest-work">
                             <h4>Information</h4>
                             <ul>
-                                <li><Link to="#"><i class="fa fa-caret-right"></i> Quality</Link></li>
-                                <li><Link to="#"><i class="fa fa-caret-right"></i> Help</Link></li>
-                                <li><Link to="#"><i class="fa fa-caret-right"></i> Share</Link></li>
-                                <li><Link to="#"><i class="fa fa-caret-right"></i> Careers</Link></li>
+                                <li><Link to="#"><i className="fa fa-caret-right"></i> Quality</Link></li>
+                                <li><Link to="#"><i className="fa fa-caret-right"></i> Help</Link></li>
+                                <li><Link to="#"><i className="fa fa-caret-right"></i> Share</Link></li>
+                                <li><Link to="#"><i className="fa fa-caret-right"></i> Careers</Link></li>
                             </ul>
                         </div>
                     </div>

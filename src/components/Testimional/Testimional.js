@@ -64,7 +64,7 @@ const Testimional = () => {
     return (
         <section className="review-area">
             <div className="container">
-                <div class="section-title">
+                <div className="section-title">
                     <h1 style={{color: '#fff'}}>CUSTOMERS SAY</h1>
                     <div className="br-top"></div>
                     <div className="br-middle"></div>
@@ -73,10 +73,9 @@ const Testimional = () => {
                 <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000}
                     keyBoardControl={true} dotListClass="custom-dot-list-style" showDots={true} transitionDuration= 'all 2s'>
                     {
-                        reviewData.map(carousel => {
-                            console.log(carousel)
+                        reviewData.map((carousel,index) => {
                             return (
-                                <div className="review-box">
+                                <div key={index} className="review-box">
                                     <img className='carousel-image' src={carousel.icon} alt="shaker" />
                                     <h4>{carousel.name}</h4>
                                     {/* <h5>{carousel.title}</h5> */}

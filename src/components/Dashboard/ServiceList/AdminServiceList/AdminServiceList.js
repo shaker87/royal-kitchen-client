@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container } from 'react-bootstrap';
 import AdminServiceListDetails from './AdminServiceListDetails';
 import { Table } from 'react-bootstrap';
 import './AdminServiceList.css'
 import LinearProgress from '@material-ui/core/LinearProgress';
-import { useContext } from 'react';
-import { UserContext } from '../../../../App';
+
 
 const AdminServiceList = () => {
     //document.title='Creative Agency |Admin - Service List'
     // const [data]=useContext(UserContext)
-    const [allService, setAllService] = useState([])
+    const [allService, ] = useState([])
     // useEffect(()=>{
     //     fetch('https://creative-agency-fullstack.herokuapp.com/show-orders')
     //     .then(res=>res.json())

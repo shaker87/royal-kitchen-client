@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import { Button, Col, Form, Row, Container } from 'react-bootstrap';
 import LeftNavbar from '../LeftNavbar/LeftNavbar';
 import './AddService.css'
@@ -9,7 +9,7 @@ import './AddService.css'
 const AddService = () => {
     // document.title='Creative Agency | Add Service'
     // const [data]=useContext(UserContext)
-    const [service, setService] = useState({})
+    
     const inputHandler = event => {
         //setService({...service, [event.target.name]:event.target.value})
     }

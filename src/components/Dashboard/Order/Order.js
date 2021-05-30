@@ -1,15 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import { Col, Form, Row,Container, Button } from 'react-bootstrap';
 import LeftNavbar from '../LeftNavbar/LeftNavbar';
 //import upload from '../../../images/icons/upload.png'
 import './Order.css'
-import {UserContext} from '../../../App'
-import { useHistory } from 'react-router-dom';
 const Order = () => {
     // document.title='Creative Agency | Order'
     // const history=useHistory()
     // const [data]=useContext(UserContext)
-    const [order,setOrder]=useState({status:'pending'})
+  
     // useEffect(()=>{
     //     setOrder({
     //         ...order,email:data.user?.email, 

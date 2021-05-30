@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { UserContext } from '../../../App';
 import LeftNavbar from '../LeftNavbar/LeftNavbar';
 import AdminServiceList from './AdminServiceList/AdminServiceList';
-import GeneralServiceList from './GeneralServiceList/GeneralServiceList';
+// import GeneralServiceList from './GeneralServiceList/GeneralServiceList';
 
 const ServiceList = () => {
 //     const [data,setData]=useContext(UserContext)

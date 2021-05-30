@@ -1,27 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import './GeneralServiceList.css'
 import {Container, Row} from 'react-bootstrap';
 import GeneralServiceListDetails from './GeneralServiceListDetails';
-import { useContext } from 'react';
-import {UserContext} from '../../../../App'
-//import loader from '../../../../images/loader.gif'
-import './GeneralServiceList.css'
 const GeneralServiceList = () => {
-//     document.title='Creative Agency | Service List'
-//     const [data]=useContext(UserContext)
-  const [allService,setAllService]=useState([])
-//   useEffect(()=>{
-//       fetch('https://creative-agency-fullstack.herokuapp.com/show-order-by-mail',{
-//           method:'GET',
-//           headers:{
-//               'Content-Type':'application/json',
-//               email:data.user?.email
-//           }
-//       })
-//       .then(res=>res.json())
-//       .then(result=>{
-//           setAllService(result)
-//       })
-//   },[])
+
+  const [allService,]= useState([])
+
     return (
         <div style={{marginTop:'10px', marginBottom:'10px'}}>
             

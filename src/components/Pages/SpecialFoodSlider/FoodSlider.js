@@ -47,27 +47,25 @@ const FoodSlider = (props) => {
         {food
           .reverse()
           .slice(0, 10)
-          .map((fd) => {
+          .map((fd, index) => {
             return (
-              <>
-                <Link to={`/`}>
-                  <div className="col">
-                    <div className="card">
-                      <div className="card-img-top">
-                        <img
-                          style={{
-                            width: "100%",
-                            height: "260px",
-                            objectFit: "cover",
-                          }}
-                          src={fd.image}
-                          alt={fd.image}
-                        />
-                      </div>
+              <Link to={`/`} key={index}>
+                <div className="col">
+                  <div className="card">
+                    <div className="card-img-top">
+                      <img
+                        style={{
+                          width: "100%",
+                          height: "260px",
+                          objectFit: "cover",
+                        }}
+                        src={fd.image}
+                        alt={fd.image}
+                      />
                     </div>
                   </div>
-                </Link>
-              </>
+                </div>
+              </Link>
             );
           })}
       </Carousel>

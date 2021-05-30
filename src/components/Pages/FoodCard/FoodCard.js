@@ -13,7 +13,7 @@ const FoodCard = ({ item }) => {
         <div className="col-sm-6 col-md-6 col-lg-4">
             <div className="food-card">
                 <div className="food-card_img">
-                    <img src={image} width="100%" alt="" srcset="" />
+                    <img src={image} width="100%" alt=""  />
                     <Link to="/" onClick={() => triggerToggle() }>{love ? <i className="fa fa-heart"></i> : <i className="fa fa-heart-o"></i>}</Link>
                 </div>
                 <div className="food-card_content">

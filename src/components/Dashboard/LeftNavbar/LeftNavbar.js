@@ -1,13 +1,9 @@
-import React, { useContext } from 'react';
 import './LeftNavbar.css'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import SmsOutlinedIcon from '@material-ui/icons/SmsOutlined';
-import AddOutlinedIcon from '@material-ui/icons/AddOutlined';
-import PersonAddOutlinedIcon from '@material-ui/icons/PersonAddOutlined';
-//import logo from '../../../images/logos/logo.png'
-import {Link, useHistory } from "react-router-dom";
-//import { UserContext } from '../../../App';
+
+import {Link } from "react-router-dom";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 const LeftNavbar = () => {
@@ -25,7 +21,7 @@ const LeftNavbar = () => {
         <div className='left-navbar'>
             <div className='pt-4 pb-5 pl-2'>
                 <Link to='/'>
-                    <img style={{width:'120px'}} src="" alt=""/>
+                    {/* <img style={{width:'120px'}} src="" alt=""/> */}
                 </Link>
             </div>
             <div>

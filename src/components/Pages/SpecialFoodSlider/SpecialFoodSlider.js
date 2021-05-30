@@ -45,10 +45,10 @@ const SpecialFoodSlider = (props) => {
         customTransition="all 1s"
         transitionDuration={1000}
       >
-        {food.slice(0, 10).map((fd) => {
+        {food.slice(0, 10).map((fd,index) => {
           return (
-            <>
-              <Link to={`/`}>
+        
+              <Link to={`/`} key={index}>
                 <div className="col">
                   <div className="card">
                     <div className="card-img-top">
@@ -66,7 +66,7 @@ const SpecialFoodSlider = (props) => {
                   </div>
                 </div>
               </Link>
-            </>
+       
           );
         })}
       </Carousel>
